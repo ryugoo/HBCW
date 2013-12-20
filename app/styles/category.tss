@@ -1,0 +1,6 @@
+"TableView[platform=ios]": {
+    style: Ti.UI.iPhone.TableViewStyle.GROUPED
+}
+"TableView[platform=android]": {
+    separatorColor: '#CCCCCC'
+}

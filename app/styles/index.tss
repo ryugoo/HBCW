@@ -1,0 +1,34 @@
+".listitem": {
+    height: '60dp'
+}
+".title": {
+    width: Ti.UI.FILL,
+    height: '40dp',
+    top: '4dp',
+    right: '11dp',
+    bottom: '4dp',
+    left: '11dp',
+    color: '#333333',
+    font: {
+        fontSize: '14sp',
+        fontWeight: 'bold'
+    }
+}
+".title[platform=android]": {
+    height: '36dp',
+}
+".link": {
+    width: Ti.UI.FILL,
+    height: '14dp',
+    right: '11dp',
+    bottom: '4dp',
+    left: '11dp',
+    color: '#545454',
+    font: {
+        fontSize: '12sp',
+        fontWeight: 'normal'
+    }
+}
+".entrylist[platform=android]": {
+    separatorColor: '#CCCCCC'
+}

@@ -1,0 +1,6 @@
+"Window": {
+    backgroundColor: '#FFFFFF',
+    barColor: '#28579F',
+    navBarColor: '#28579F',
+    navTintColor: '#FFFFFF'
+}

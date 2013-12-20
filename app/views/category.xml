@@ -1,0 +1,32 @@
+<Alloy>
+
+  <!-- iOS -->
+  <NavigationWindow id="window" platform="ios">
+    <Window title="カテゴリ">
+      <RightNavButton>
+        <Button title="閉じる" onClick="dismiss" />
+      </RightNavButton>
+
+      <!-- カテゴリ選択 -->
+      <TableView onClick="select">
+        <TableViewSection id="section">
+        </TableViewSection>
+      </TableView>
+
+    </Window>
+  </NavigationWindow>
+
+  <!-- Android -->
+  <Window title="カテゴリ" id="window" platform="android">
+    <RightNavButton>
+      <Button title="閉じる" onClick="dismiss" />
+    </RightNavButton>
+
+    <!-- カテゴリ選択 -->
+    <TableView onClick="select">
+      <TableViewSection id="section">
+      </TableViewSection>
+    </TableView>
+
+  </Window>
+</Alloy>

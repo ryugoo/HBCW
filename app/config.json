@@ -1,0 +1,59 @@
+{
+    "global": {
+        "CHATWORK_API_TOKEN": "INPUT YOUR CHATWORK API TOKEN",
+        "CATEGORIES": {
+            "HOTENTRY": {
+                "title": "最近の人気",
+                "url": "http://feeds.feedburner.com/hatena/b/hotentry"
+            },
+            "GENERAL": {
+                "title": "一般",
+                "url": "http://b.hatena.ne.jp/hotentry.rss?mode=general"
+            },
+            "SOCIAL": {
+                "title": "世の中",
+                "url": "http://b.hatena.ne.jp/hotentry/social.rss"
+            },
+            "ECONOMICS": {
+                "title": "政治・経済",
+                "url": "http://b.hatena.ne.jp/hotentry/economics.rss"
+            },
+            "LIFE": {
+                "title": "暮らし",
+                "url": "http://b.hatena.ne.jp/hotentry/life.rss"
+            },
+            "ENTERTAINMENT": {
+                "title": "エンタメ",
+                "url": "http://b.hatena.ne.jp/hotentry/entertainment.rss"
+            },
+            "KNOWLEDGE": {
+                "title": "学び",
+                "url": "http://b.hatena.ne.jp/hotentry/knowledge.rss"
+            },
+            "IT": {
+                "title": "テクノロジー",
+                "url": "http://b.hatena.ne.jp/hotentry/it.rss"
+            },
+            "GAME": {
+                "title": "アニメとゲーム",
+                "url": "http://b.hatena.ne.jp/hotentry/game.rss"
+            },
+            "FUN": {
+                "title": "おもしろ",
+                "url": "http://b.hatena.ne.jp/hotentry/fun.rss"
+            },
+            "VIDEO": {
+                "title": "人気の動画",
+                "url": "http://feeds.feedburner.com/hatena/b/video"
+            }
+        }
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:android": {},
+    "os:blackberry": {},
+    "os:ios": {},
+    "os:mobileweb": {},
+    "dependencies": {}
+}

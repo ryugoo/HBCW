@@ -1,0 +1,63 @@
+<Alloy>
+  <Collection src="entry" />
+
+  <!-- NavigationWindow (iOS 専用) -->
+  <NavigationWindow onOpen="startApplication" platform="ios" id="ios_base">
+    <Window title="最近の人気" id="window">
+
+      <!-- ナビゲーションボタン -->
+      <LeftNavButton>
+        <Button title="カテゴリ" onClick="openCategory" />
+      </LeftNavButton>
+      <RightNavButton>
+        <Button title="0件送る" onClick="sendEntry" id="queueCount" />
+      </RightNavButton>
+
+      <!-- エントリ一覧 -->
+      <ListView defaultItemTemplate="entry" onItemclick="enqueEntry">
+
+        <!-- テンプレート -->
+        <Templates>
+          <ItemTemplate name="entry" class="entry">
+            <Label bindId="title" class="title" />
+            <Label bindId="link" class="link" />
+          </ItemTemplate>
+        </Templates>
+
+        <!-- アイテムリスト -->
+        <ListSection dataCollection="entry">
+          <ListItem title:text="{title}" link:text="{link}" class="listitem" />
+        </ListSection>
+      </ListView>
+
+    </Window>
+  </NavigationWindow>
+
+  <!-- Window (Android 専用) -->
+  <Window title="最近の人気" onOpen="startApplication" id="android_base" platform="android">
+
+    <!-- アクションバー -->
+    <Menu id="menu" platform="android">
+      <MenuItem title="カテゴリ" onClick="openCategory" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+      <MenuItem title="0件送る" onClick="sendEntry" showAsAction="Ti.Android.SHOW_AS_ACTION_ALWAYS" />
+    </Menu>
+
+    <!-- エントリ一覧 -->
+    <ListView defaultItemTemplate="entry" onItemclick="enqueEntry" class="entrylist">
+
+      <!-- テンプレート -->
+      <Templates>
+        <ItemTemplate name="entry" class="entry">
+          <Label bindId="title" class="title" />
+          <Label bindId="link" class="link" />
+        </ItemTemplate>
+      </Templates>
+
+      <!-- アイテムリスト -->
+      <ListSection dataCollection="entry">
+        <ListItem title:text="{title}" link:text="{link}" class="listitem" />
+      </ListSection>
+    </ListView>
+
+  </Window>
+</Alloy>
